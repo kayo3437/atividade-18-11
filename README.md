@@ -1,19 +1,19 @@
 # Documentação da configuração do react
 
 As 5 edições que fiz no App.js
-1. ""<div className="App">"
+1. ""div className="App""
 Ele cria uma <div> HTML com a classe app.
 
-2. "<Navbar dark color="primary">"
+2. "Navbar dark color="primary""
 Ele renderiza um componente Navbar, que vem de uma biblioteca como Reactstrap.
 
-3. "<div className="container">"
+3. "div className="container""
 Ele adiciona uma <div> com a classe container, usada para centralizar e limitar o conteúdo.
 
-4. "<NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>"
+4. "NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand"
 Ele renderiza o componente NavbarBrand, que é o nome mostrado na barra de navegação.
 
-5. "<div>Aluno: kayo fernando</div>"
+5. "div>Aluno: kayo fernando</div"
 Adiciona uma <div> com o texto "Aluno: kayo fernando". É um elemento para exibir informações como o nome do aluno.
 
 
