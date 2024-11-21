@@ -1,10 +1,69 @@
-# Getting Started with Create React App
+# Documentação da configuração do react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As 5 edições que fiz no App.js
+1. ""<div className="App">"
+Ele cria uma <div> HTML com a classe app.
 
-## Available Scripts
+2. "<Navbar dark color="primary">"
+Ele renderiza um componente Navbar, que vem de uma biblioteca como Reactstrap.
 
-In the project directory, you can run:
+3. "<div className="container">"
+Ele adiciona uma <div> com a classe container, usada para centralizar e limitar o conteúdo.
+
+4. "<NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>"
+Ele renderiza o componente NavbarBrand, que é o nome mostrado na barra de navegação.
+
+5. "<div>Aluno: kayo fernando</div>"
+Adiciona uma <div> com o texto "Aluno: kayo fernando". É um elemento para exibir informações como o nome do aluno.
+
+
+
+
+# arquivo index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Mover esta linha para o topo
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+## Arquivo App.js
+
+import './App.css';
+import { Navbar, NavbarBrand } from 'reactstrap';
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar dark color="primary">
+        <div className="container">
+          <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+          <div>Aluno: kayo fernando </div>
+        </div>
+      </Navbar>
+    </div>
+  );
+}
+
+export default App;
+
+
+# Imagem da resolução do exercício
+
+![alt text](<src/Captura de tela 2024-11-21 195453.png>)
 
 ### `npm start`
 
